@@ -20,4 +20,5 @@ build:
           ls -al
           ls -al /pipeline
           ls -al /pipeline/build
+          ls -al /pipeline/source
           nosetests tests/unit
