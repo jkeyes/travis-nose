@@ -1,0 +1,18 @@
+box: wercker/python
+build:
+  steps:
+    - script:
+        name: "app init"
+        code: |-
+          echo $PATH
+          echo $CI_BUILD
+          cd /pipeline/build
+          which pip
+          pip --version
+          sudo pip nose
+          sudo pip httpretty
+          sudo pip requests
+    - script:
+        name: "tests"
+        code: |-
+          nosetests tests/unit
