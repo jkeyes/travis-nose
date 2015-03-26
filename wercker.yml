@@ -6,8 +6,8 @@ build:
         code: |-
           echo $PATH
           echo $CI_BUILD
-          cd /pipeline/build
           python -V
+          python3.4 -V
           which pip
           pip --version
           sudo pip install nose
