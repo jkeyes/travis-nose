@@ -1,7 +1,6 @@
 box: python
 build:
   steps:
-    - virtualenv
     - script:
         name: "app init"
         code: |-
