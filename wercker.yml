@@ -17,8 +17,4 @@ build:
     - script:
         name: "tests"
         code: |-
-          ls -al
-          ls -al /pipeline
-          ls -al /pipeline/source
-          ls -al /pipeline/build
-          nosetests tests/unit
+          nosetests test_nose.py
