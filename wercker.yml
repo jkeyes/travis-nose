@@ -17,4 +17,7 @@ build:
     - script:
         name: "tests"
         code: |-
+          ls -al
+          ls -al /pipleline
+          ls -al /pipleline/build
           nosetests tests/unit
