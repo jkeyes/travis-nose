@@ -8,6 +8,7 @@ build:
           echo $CI_BUILD
           python -V
           python3.4 -V
+          compgen -ac | grep pip
           which pip3.4
           pip3.4 --version
           sudo pip3.4 install nose
