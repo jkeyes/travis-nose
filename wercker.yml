@@ -18,6 +18,6 @@ build:
         name: "tests"
         code: |-
           ls -al
-          ls -al /pipleline
-          ls -al /pipleline/build
+          ls -al /pipeline
+          ls -al /pipeline/build
           nosetests tests/unit
