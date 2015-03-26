@@ -1,4 +1,4 @@
-box: wercker/python
+box: yukirin/python3.4-werckerbox@0.2.1
 build:
   steps:
     - script:
@@ -7,11 +7,12 @@ build:
           echo $PATH
           echo $CI_BUILD
           cd /pipeline/build
+          python -V
           which pip
           pip --version
-          sudo pip nose
-          sudo pip httpretty
-          sudo pip requests
+          sudo pip install nose
+          sudo pip install httpretty
+          sudo pip install requests
     - script:
         name: "tests"
         code: |-
