@@ -1,15 +1,16 @@
-box: yukirin/python3.4-werckerbox@0.2.1
+box: python
 build:
   steps:
+    - virtualenv
     - script:
         name: "app init"
         code: |-
+          compgen -ac | grep pip
+          compgen -ac | grep python
           echo $PATH
           echo $CI_BUILD
           python -V
           python3.4 -V
-          compgen -ac | grep pip
-          which pip3.4
           pip3.4 --version
           sudo pip3.4 install nose
           sudo pip3.4 install httpretty
