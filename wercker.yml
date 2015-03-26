@@ -19,6 +19,6 @@ build:
         code: |-
           ls -al
           ls -al /pipeline
-          ls -al /pipeline/build
           ls -al /pipeline/source
+          ls -al /pipeline/build
           nosetests tests/unit
