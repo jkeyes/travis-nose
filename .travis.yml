@@ -4,7 +4,7 @@ python:
   - 3.4
 install: 
   - pip install nose
-  - pip install httpretty
+  - pip install httpretty==0.8.7
   - pip install requests
 script:
   - nosetests
